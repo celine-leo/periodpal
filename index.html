@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeriodPal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    
+    <div id="header">
+        <h1>Welcome to PeriodPal</h1>
+        
+        <para>
+            Make peace with your hormones!
+        </para>
+        <br/>
+        <br/>
+        <para>
+            Visit PeriodPal for accessible, informative content that sheds light on hormonal imbalances. Learn to recognize symptoms within your cycle, empowering you to make informed lifestyle choices. Join us on the journey to hormonal health and well-being!
+        </para>
+    </div>
+
+    <div class="fullContainer">
+    
+        <div class="container">
+            <h2>Calculate your Period</h2>
+            <form id="periodForm">
+                <label for="lastPeriodDate">Last Period Start Date:</label>
+                <input type="date" id="lastPeriodDate" required>
+
+                <label for="periodLength">Period Length (days):</label>
+                <input type="number" id="periodLength" min="1" required>
+                
+                <label for="cycleLength">Cycle Length (days):</label>
+                <input type="number" id="cycleLength" min="20" max="45" required>
+                
+                <button type="submit">Calculate</button>
+            </form>
+
+        </div>
+
+        <div id="resultContainer" class="hidden"></div>
+
+        <div id="recommendationContainer" class="hidden"></div>
+
+    </div>
+
+    <script src="https://cdn.jotfor.ms/s/umd/latest/for-cardform-feedback-embed.js"></script> <script> var componentID = new JF_FeedbackEmbedButton({ buttonIcon: "rate", buttonFontColor: "#FFFFFF", buttonBackgroundColor: "#c2a5d1", formId: 241423256320445 , buttonText: "Leave your Feedback", buttonSide: "Bottom", buttonAlign: "Right", base: "https://form.jotform.com/", }).componentID; </script> <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script> <script>window.jotformEmbedHandler("iframe[id='" + componentID + "_iframe']", "https://form.jotform.com/")</script>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+
+</html>

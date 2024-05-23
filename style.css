@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Noto Sans", serif;
+    font-size: 16px;
+    background-color: #f7eded;
+    display: block;
+    justify-content: center;
+    align-items: left;
+    height: 100vh;
+    margin: 80px;
+    padding: 0;
+    box-sizing: border-box;
+    border-left: 10px;
+    border-right: 20px;
+}
+
+.text {
+    border-width: 30px 80px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6,nav, input {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Title and header 2*/
+h1, h2, h4 {
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    font-variation-settings:"width" 100;
+    margin-bottom: 15px;
+}
+
+/* Top portion of page*/
+#header {
+    padding: 30px 60px;
+    margin: 0px;
+    background-image: linear-gradient(to bottom, #C2A5D1,#C2A5D1, transparent);
+}
+
+.fullContainer {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+/* Entire Calculator portion*/
+.container {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 45px;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    
+}
+
+@media (max-width: 1000px) {
+    .fullContainer {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+/* Results portion*/
+.hidden {
+    display: none;
+}
+
+#disclaimer {
+    border-width: 30px 0px;
+    border-color: transparent;
+    border-style: solid;
+    font-style: italic;
+    font-size: smaller;
+    margin: 0;
+}
+
+/* Calculator words and inputs portion*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-width: 2px;
+    border-radius: 45px;
+    font-size: 85%;
+    font-family: "Noto Sans", serif;
+}
+
+/* Calculate Button*/
+button {
+    padding: 10px;
+    background-color: #C2A5D1ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+button:hover {
+    background-color: #5d396f;
+}
+
+/* Form result*/
+.result {
+    font-size: 1rem;
+    color: #555;
+}
+
+.result span {
+    font-weight: bold;
+    color: #000;
+}
+
+.recommendation {
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+}
+
+.recommendation span {
+    font-weight: bold;
+}
+
+/* References */
+.references ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.references li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.references i {
+    font-style: italic;
+}
+.thanks {
+    padding: 80px 80px;
+    text-align: center; 
+    vertical-align: middle
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* width of vertical scrollbar */
+    height: 12px; /* height of horizontal scrollbar */
+    background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;/* color of the track */
+    background: #F7EDED;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: none; /*the track NOT covered by the handle.*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F7EDED; /* color of the handle */
+    border-radius: 50px; /* roundness of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #C2A5D1; /* color of the handle when hovered */
+}
+/*
+CSS HEX
+--white: #FFFFFFff;
+--tea-rose-red: #E8B2B2ff;
+--lilac: #C2A5D1ff;
+--redwood: #995151ff;
+--bone: #EADFD0ff;
+--snow: #F7EDEDff;
+--lavender-web: #DEE2FFff;
+
+CSS HSL
+--white: hsla(0, 0%, 100%, 1);
+--tea-rose-red: hsla(0, 54%, 80%, 1);
+--lilac: hsla(280, 32%, 73%, 1);
+--redwood: hsla(0, 31%, 46%, 1);
+--bone: hsla(35, 38%, 87%, 1);
+--snow: hsla(0, 38%, 95%, 1);
+--lavender-web: hsla(233, 100%, 94%, 1);
+
+SCSS HEX
+$white: #FFFFFFff;
+$tea-rose-red: #E8B2B2ff;
+$lilac: #C2A5D1ff;
+$redwood: #995151ff;
+$bone: #EADFD0ff;
+$snow: #F7EDEDff;
+$lavender-web: #DEE2FFff;
+
+SCSS HSL
+$white: hsla(0, 0%, 100%, 1);
+$tea-rose-red: hsla(0, 54%, 80%, 1);
+$lilac: hsla(280, 32%, 73%, 1);
+$redwood: hsla(0, 31%, 46%, 1);
+$bone: hsla(35, 38%, 87%, 1);
+$snow: hsla(0, 38%, 95%, 1);
+$lavender-web: hsla(233, 100%, 94%, 1);
+
+SCSS RGB
+$white: rgba(255, 255, 255, 1);
+$tea-rose-red: rgba(232, 178, 178, 1);
+$lilac: rgba(194, 165, 209, 1);
+$redwood: rgba(153, 81, 81, 1);
+$bone: rgba(234, 223, 208, 1);
+$snow: rgba(247, 237, 237, 1);
+$lavender-web: rgba(222, 226, 255, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-right: linear-gradient(90deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-bottom: linear-gradient(180deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-left: linear-gradient(270deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-top-right: linear-gradient(45deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-bottom-right: linear-gradient(135deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-top-left: linear-gradient(225deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-bottom-left: linear-gradient(315deg, #FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+$gradient-radial: radial-gradient(#FFFFFFff, #E8B2B2ff, #C2A5D1ff, #995151ff, #EADFD0ff, #F7EDEDff, #DEE2FFff);
+*/

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeriodPal - Cycle Syncing</title>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        function showLayer(layerId) {
+        const layers = document.querySelectorAll('.layer');
+        layers.forEach(layer => {
+            if (layer.id === layerId) {
+                layer.classList.remove('hidden');
+            } else {
+                layer.classList.add('hidden');
+            }
+        });}
+        </script>
+    
+    <style>
+        .graph {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        gap: 5px;
+        margin: 80px;
+        align-items: center;
+        }
+    
+        .button-container {
+            width: auto;
+            height: auto;
+            display: block;
+        }
+    
+        .button-container button {
+            padding: 10px;
+            background-color:white;
+            color: fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: auto;
+            justify-content: center;
+            align-items: left;
+            display: flex;
+            margin: 10px;
+        }
+    
+        .cycleContainer {
+            justify-content: left;
+            align-items: left;
+            display:flex;
+        }
+    
+        .cycleTypes {
+            position: absolute;
+        }
+
+        .phases {
+            display: flex;
+            gap: 10px;
+        }
+    
+        .layer img{
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            height: 250px;
+        }
+    
+        .hidden {
+            display: none;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="graph">
+        <div style="grid-column: span 3;"><h1>Menstrual Cycle</h1></div>
+        
+        <div style="grid-column: span 3;">
+            <p>Click on the buttons to show specific changes during your cycle. This is based off a typical 28-day cycle.</p>
+        </div>
+        
+        <div class="button-container" class="cycleTypes" class="cycle-container">
+            <button onclick="showLayer('Ovarian')"><img src="/assets/ST_Ovarian Cycle.png" style="height: 30px"></button>
+            <button onclick="showLayer('Uterine')"><img src="/assets/ST_Uterine Cycle.png" style="height: 30px"></button>
+            <button onclick="showLayer('Seasons')"><img src="/assets/ST_Inner Seasons.png" style="height: 30px"></button>
+        </div>
+        
+        <div class="cycle" class="cycleContainer">
+    
+            <div id="reset" class="layer">
+                <img src="/assets/graph_full.png">
+            </div>
+    
+            <div id="Ovarian" class="layer hidden">
+                <img src="/assets/graph_ST_Ovarian Cycle.png">
+            </div>
+            <div id="Uterine" class="layer hidden">
+                <img src="/assets/graph_ST_Uterine Cycle.png">
+            </div>
+            <div id="Seasons" class="layer hidden">
+                <img src="/assets/graph_ST_InnerSeasons.png">
+            </div>
+    
+            <div id="Hormones" class="layer hidden">
+                <img src="/assets/graph_Hormones.png">
+            </div>
+            <div id="FSH" class="layer hidden">
+                <img src="/assets/graph_Hormones1FSH.png">
+            </div>
+            <div id="OGN" class="layer hidden">
+                <img src="/assets/graph_Hormones2Ogn.png">
+            </div>
+            <div id="LH" class="layer hidden">
+                <img src="/assets/graph_Hormones3LG.png">
+            </div>
+            <div id="PGN" class="layer hidden">
+                <img src="/assets/graph_Hormones4Pgn.png">
+            </div>
+    
+            <div id="Period" class="layer hidden">
+                <img src="/assets/graph_1Period.png">
+            </div>
+            <div id="Proliferative" class="layer hidden">
+                <img src="/assets/graph_2Proliferative.png">
+            </div>
+            <div id="Ovulation" class="layer hidden">
+                <img src="/assets/graph_3Ovulation.png">
+            </div>
+            <div id="Secretory" class="layer hidden">
+                <img src="/assets/graph_4Secretory phase.png">
+            </div>
+    
+        </div>
+    
+        <div class="button-container" class="legend" class="cycle-container">
+            <button onclick="showLayer('Hormones')" style="height: 30px; color: black;">Hormones</button>
+            <button onclick="showLayer('FSH')"><img src="/assets/Legend_FSH.png" style="height: 30px"></button>
+            <button onclick="showLayer('OGN')"><img src="/assets/Legend_Ogn.png" style="height: 30px"></button>
+            <button onclick="showLayer('LH')"><img src="/assets/Legend_LH.png" style="height: 30px"></button>
+            <button onclick="showLayer('PGN')"><img src="/assets/Legend_Pgn.png" style="height: 30px"></button>
+        </div>
+    
+        <div>   </div>
+    
+        <div class="button-container" class="phases">
+            <button onclick="showLayer('Period')"><img src="/assets/UC1_Period.png" style="height: 30px"></button>
+            <button onclick="showLayer('Proliferative')"><img src="/assets/UC2_Proliferative phase.png" style="height: 30px"></button>
+            <button onclick="showLayer('Ovulation')"><img src="/assets/UC3_Ovulation.png" style="height: 30px"></button>
+            <button onclick="showLayer('Secretory')"><img src="/assets/UC4_Secretory phase.png" style="height: 30px"></button>
+        </div>
+    
+        <div class="button-container" id="reset">
+            <button onclick="showLayer('reset')" style="height: 30px; color: black;">Reset</button>
+        </div>
+    </div>
+
+    <div class="text">
+    <p>
+        The menstrual cycle involves four distinct phases:
+    </p>
+    <ul>
+        <li>Period (menstruation, also part of follicular phase)</li>
+        <li>Follicular (pre-egg release)</li>
+        <li>Ovulation (release of the egg)</li>
+        <li>Luteal (post-egg release)</li>
+    </ul>
+    </div>
+    <script src="https://cdn.jotfor.ms/s/umd/latest/for-cardform-feedback-embed.js"></script> <script> var componentID = new JF_FeedbackEmbedButton({ buttonIcon: "rate", buttonFontColor: "#FFFFFF", buttonBackgroundColor: "#c2a5d1", formId: 241423256320445 , buttonText: "Leave your Feedback", buttonSide: "Bottom", buttonAlign: "Right", base: "https://form.jotform.com/", }).componentID; </script> <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script> <script>window.jotformEmbedHandler("iframe[id='" + componentID + "_iframe']", "https://form.jotform.com/")</script>
+    
+    <script src="/script.js"></script>
+</body>
+    
+<footer>
+    <div id="footer"></div>
+</footer>
+    
+</html>
