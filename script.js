@@ -113,12 +113,6 @@ document.getElementById('periodForm').addEventListener('submit', function(event)
 });
 
 // Recommendation section buttons //
-function scrollToSection(Nutrition) {
-    const section = document.getElementById(Nutrition);
-    section.scrollIntoView({ behavior: 'smooth' });
-}
-
-function scrollToSection(Exercise) {
-    const section = document.getElementById(Exercise);
-    section.scrollIntoView({ behavior: 'smooth' });
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
