@@ -16,15 +16,16 @@ body {
 }
 
 .text {
-    border-width: 30px 80px;
+    border-width: 3vh 8vh;
     border-style: solid;
     border-color: transparent;
 }
 
 .pages {
-    margin-left: 20%;
-    margin-right: 20%;
-    max-width: 1500px;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    max-width: 1080px;
+    align-content: center;
 }
 
 h1,h2,h3,h4,h5,h6,nav, input {
