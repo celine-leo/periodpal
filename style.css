@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: left;
     height: 100vh;
-    margin: 80px;
+    margin: 30px 0px;
     padding: 0;
     box-sizing: border-box;
     border-left: 10px;
@@ -19,6 +19,12 @@ body {
     border-width: 30px 80px;
     border-style: solid;
     border-color: transparent;
+}
+
+.pages {
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 1500px;
 }
 
 h1,h2,h3,h4,h5,h6,nav, input {
@@ -32,13 +38,6 @@ h1, h2, h4 {
     font-style: normal;
     font-variation-settings:"width" 100;
     margin-bottom: 15px;
-}
-
-/* Top portion of page*/
-#header {
-    padding: 30px 60px;
-    margin: 0px;
-    background-image: linear-gradient(to bottom, #C2A5D1,#C2A5D1, transparent);
 }
 
 .fullContainer {
@@ -164,6 +163,7 @@ button:hover {
     display: flex;
     width: 50%;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .thanks {
