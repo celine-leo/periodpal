@@ -71,12 +71,19 @@ h1, h2, h4 {
     .fullContainer {
         flex-direction: column;
         gap: 0px;
+        margin: auto;
     }
     .pages {
         margin: 5vh 3vw;
     }
     .graph {
         margin: 5vh 3vw;
+    }
+    #graphpage p {
+        text-align: left;
+    }
+    .graph div {
+        justify-self: left;
     }
     .text {
         border-width: 1vh 3vw;
