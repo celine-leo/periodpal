@@ -248,15 +248,23 @@ button.scroll  {
 }
 
 .topics {
+    background-color: #ffffff;
+    padding: 2vw;
+    border-radius: 45px;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.topicContainer {
     display: grid;
     width: auto;
-    gap: 1vh;
+    height: 100%;
+    gap: 2vh;
     text-align: left;
     justify-content: center;
     align-items: start;
     margin: auto;
     justify-items: start;
     grid-template-columns: 1fr 1fr;
+  
 }
 
 .topics a {
