@@ -39,7 +39,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
-        gap: 5px;
+        gap: 1vh;
         align-items: center;
         justify-items: center;
         }
@@ -88,12 +88,13 @@
         div.button-container.legend.cycle-container,
         #reset {
             justify-self: left;
+
         }
 
         #phases {
             display: flex;
         }
-    
+
         .layer img{
             padding: 20px;
             background-color: white;
@@ -106,7 +107,6 @@
             display: none;
         }
         
-
     </style>
 
 </head>
@@ -123,6 +123,9 @@
             
         <div class="button-container cycleTypes cycle-container">
             <button onclick="showLayer('Ovarian')"><img src="/assets/ST_Ovarian Cycle.png"></button>
+            <div></div>
+            <div></div>
+            <div></div>
             <button onclick="showLayer('Uterine')"><img src="/assets/ST_Uterine Cycle.png"></button>
             <button onclick="showLayer('Seasons')"><img src="/assets/ST_Inner Seasons.png"></button>
         </div>
