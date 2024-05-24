@@ -78,16 +78,16 @@ document.getElementById('periodForm').addEventListener('submit', function(event)
         let recommendation = '';
         switch (phase) {
             case 'Menstrual':
-                recommendation = 'It is recommended to rest and stay hydrated during your menstrual phase.';
+                recommendation = 'Take it easy and prioritize self-care. Stay hydrated and well-rested. Listen to your body and be kind to yourself today. You go girl!';
                 break;
             case 'Follicular':
-                recommendation = 'You may engage in moderate exercise and focus on a balanced diet during your follicular phase.';
+                recommendation = 'Engage in moderate exercise and focus on a balanced diet during this phase. Embrace the energy!';
                 break;
             case 'Ovulation':
-                recommendation = 'Your fertility is high during ovulation. If you are trying to conceive, this is an optimal time for intercourse.';
+                recommendation = 'This is your time to shine! Conquer your workout regime today and achieve your goals. Focus on quality protein and healthy fats.';
                 break;
             case 'Luteal':
-                recommendation = 'During the luteal phase, prioritize self-care and manage stress levels. Consider relaxation techniques such as meditation or yoga.';
+                recommendation = 'Nurture your body and mind. Manage your stress levels using relaxation techniques such as meditation or yoga.';
                 break;
             default:
                 recommendation = 'No specific recommendation.';
