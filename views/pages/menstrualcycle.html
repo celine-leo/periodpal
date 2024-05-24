@@ -32,6 +32,7 @@
             border-width: 0vh 0vh;
             margin-left: 0vh;
             margin-right: 0vh;
+            width: 100%;
         }
         
         .graph {
@@ -112,92 +113,87 @@
 
 <body>
     <div id="navbar"></div>
-
-    <div id="graphpage">
-        <div class="graph">
-            <div style="grid-column: span 3;"><h1>Menstrual Cycle</h1></div>
+    <div class="pages text">
+        <h1>Menstrual Cycle</h1>
+        
+        <p>Click on the buttons to show specific changes during your cycle.</p>
+        <p>This is based off a typical 28-day cycle.</p>
+    </div>
+    <div id="graphpage" class="graph">
             
-            <div style="grid-column: span 3;">
-                <p>Click on the buttons to show specific changes during your cycle.</p>
-                <p>This is based off a typical 28-day cycle.</p>
-            </div>
-            
-            <div class="button-container cycleTypes cycle-container">
-                <button onclick="showLayer('Ovarian')"><img src="/assets/ST_Ovarian Cycle.png"></button>
-                <button onclick="showLayer('Uterine')"><img src="/assets/ST_Uterine Cycle.png"></button>
-                <button onclick="showLayer('Seasons')"><img src="/assets/ST_Inner Seasons.png"></button>
-            </div>
-            
-            <div class="cycle cycleContainer">
-        
-                <div id="reset" class="layer">
-                    <img src="/assets/graph_full.png">
-                </div>
-        
-                <div id="Ovarian" class="layer hidden">
-                    <img src="/assets/graph_ST_Ovarian Cycle.png">
-                </div>
-                <div id="Uterine" class="layer hidden">
-                    <img src="/assets/graph_ST_Uterine Cycle.png">
-                </div>
-                <div id="Seasons" class="layer hidden">
-                    <img src="/assets/graph_ST_InnerSeasons.png">
-                </div>
-        
-                <div id="Hormones" class="layer hidden">
-                    <img src="/assets/graph_Hormones.png">
-                </div>
-                <div id="FSH" class="layer hidden">
-                    <img src="/assets/graph_Hormones1FSH.png">
-                </div>
-                <div id="OGN" class="layer hidden">
-                    <img src="/assets/graph_Hormones2Ogn.png">
-                </div>
-                <div id="LH" class="layer hidden">
-                    <img src="/assets/graph_Hormones3LG.png">
-                </div>
-                <div id="PGN" class="layer hidden">
-                    <img src="/assets/graph_Hormones4Pgn.png">
-                </div>
-        
-                <div id="Period" class="layer hidden">
-                    <img src="/assets/graph_1Period.png">
-                </div>
-                <div id="Proliferative" class="layer hidden">
-                    <img src="/assets/graph_2Proliferative.png">
-                </div>
-                <div id="Ovulation" class="layer hidden">
-                    <img src="/assets/graph_3Ovulation.png">
-                </div>
-                <div id="Secretory" class="layer hidden">
-                    <img src="/assets/graph_4Secretory phase.png">
-                </div>
-        
-            </div>
-        
-            <div class="button-container legend cycle-container">
-                <button onclick="showLayer('Hormones')" style="height: 4vh; color: black;">Hormones</button>
-                <button onclick="showLayer('FSH')"><img src="/assets/Legend_FSH.png"></button>
-                <button onclick="showLayer('OGN')"><img src="/assets/Legend_Ogn.png"></button>
-                <button onclick="showLayer('LH')"><img src="/assets/Legend_LH.png"></button>
-                <button onclick="showLayer('PGN')"><img src="/assets/Legend_Pgn.png"></button>
-            </div>
-        
-            <div>   </div>
-        
-            <div class="button-container" id="phases">
-                <button onclick="showLayer('Period')"><img src="/assets/UC1_Period.png"></button>
-                <button onclick="showLayer('Proliferative')"><img src="/assets/UC2_Proliferative phase.png"></button>
-                <button onclick="showLayer('Ovulation')"><img src="/assets/UC3_Ovulation.png"></button>
-                <button onclick="showLayer('Secretory')"><img src="/assets/UC4_Secretory phase.png"></button>
-            </div>
-        
-            <div class="button-container" id="reset">
-                <button onclick="showLayer('reset')" style="height: 30px; color: black;">Reset</button>
-            </div>
+        <div class="button-container cycleTypes cycle-container">
+            <button onclick="showLayer('Ovarian')"><img src="/assets/ST_Ovarian Cycle.png"></button>
+            <button onclick="showLayer('Uterine')"><img src="/assets/ST_Uterine Cycle.png"></button>
+            <button onclick="showLayer('Seasons')"><img src="/assets/ST_Inner Seasons.png"></button>
         </div>
-
         
+        <div class="cycle cycleContainer">
+    
+            <div id="reset" class="layer">
+                <img src="/assets/graph_full.png">
+            </div>
+    
+            <div id="Ovarian" class="layer hidden">
+                <img src="/assets/graph_ST_Ovarian Cycle.png">
+            </div>
+            <div id="Uterine" class="layer hidden">
+                <img src="/assets/graph_ST_Uterine Cycle.png">
+            </div>
+            <div id="Seasons" class="layer hidden">
+                <img src="/assets/graph_ST_InnerSeasons.png">
+            </div>
+    
+            <div id="Hormones" class="layer hidden">
+                <img src="/assets/graph_Hormones.png">
+            </div>
+            <div id="FSH" class="layer hidden">
+                <img src="/assets/graph_Hormones1FSH.png">
+            </div>
+            <div id="OGN" class="layer hidden">
+                <img src="/assets/graph_Hormones2Ogn.png">
+            </div>
+            <div id="LH" class="layer hidden">
+                <img src="/assets/graph_Hormones3LG.png">
+            </div>
+            <div id="PGN" class="layer hidden">
+                <img src="/assets/graph_Hormones4Pgn.png">
+            </div>
+    
+            <div id="Period" class="layer hidden">
+                <img src="/assets/graph_1Period.png">
+            </div>
+            <div id="Proliferative" class="layer hidden">
+                <img src="/assets/graph_2Proliferative.png">
+            </div>
+            <div id="Ovulation" class="layer hidden">
+                <img src="/assets/graph_3Ovulation.png">
+            </div>
+            <div id="Secretory" class="layer hidden">
+                <img src="/assets/graph_4Secretory phase.png">
+            </div>
+    
+        </div>
+    
+        <div class="button-container legend cycle-container">
+            <button onclick="showLayer('Hormones')" style="height: 4vh; color: black;">Hormones</button>
+            <button onclick="showLayer('FSH')"><img src="/assets/Legend_FSH.png"></button>
+            <button onclick="showLayer('OGN')"><img src="/assets/Legend_Ogn.png"></button>
+            <button onclick="showLayer('LH')"><img src="/assets/Legend_LH.png"></button>
+            <button onclick="showLayer('PGN')"><img src="/assets/Legend_Pgn.png"></button>
+        </div>
+    
+        <div>   </div>
+    
+        <div class="button-container" id="phases">
+            <button onclick="showLayer('Period')"><img src="/assets/UC1_Period.png"></button>
+            <button onclick="showLayer('Proliferative')"><img src="/assets/UC2_Proliferative phase.png"></button>
+            <button onclick="showLayer('Ovulation')"><img src="/assets/UC3_Ovulation.png"></button>
+            <button onclick="showLayer('Secretory')"><img src="/assets/UC4_Secretory phase.png"></button>
+        </div>
+    
+        <div class="button-container" id="reset">
+            <button onclick="showLayer('reset')" style="height: 30px; color: black;">Reset</button>
+        </div>
     </div>
      
     <div class="pages text">
