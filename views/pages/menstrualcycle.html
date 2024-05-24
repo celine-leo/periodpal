@@ -72,7 +72,8 @@
         
         div.cycleTypes {
         justify-self: right;
-        display: flex;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         }
         
         .cycleContainer {
@@ -84,7 +85,7 @@
         .cycleTypes img,
         .legend img,
         #phases img {
-            height: 4vh;
+            height: 5vh;
         }
 
         div.button-container.legend.cycle-container,
@@ -124,7 +125,6 @@
             
         <div class="button-container cycleTypes cycle-container">
             <button onclick="showLayer('Ovarian')"><img src="/assets/ST_Ovarian Cycle.png"></button>
-            <div></div>
             <div></div>
             <div></div>
             <button onclick="showLayer('Uterine')"><img src="/assets/ST_Uterine Cycle.png"></button>
@@ -179,7 +179,7 @@
         </div>
     
         <div class="button-container legend cycle-container">
-            <button onclick="showLayer('Hormones')" style="height: 4vh; color: black;">Hormones</button>
+            <button onclick="showLayer('Hormones')" style="height: 7vh; color: black;">Hormones</button>
             <button onclick="showLayer('FSH')"><img src="/assets/Legend_FSH.png"></button>
             <button onclick="showLayer('OGN')"><img src="/assets/Legend_Ogn.png"></button>
             <button onclick="showLayer('LH')"><img src="/assets/Legend_LH.png"></button>
@@ -196,7 +196,7 @@
         </div>
     
         <div class="button-container" id="reset">
-            <button onclick="showLayer('reset')" style="height: 30px; color: black;">Reset</button>
+            <button onclick="showLayer('reset')" style="height: 7vh; color: black;">Reset</button>
         </div>
     </div>
      

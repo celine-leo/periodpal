@@ -129,6 +129,15 @@ div.pages.intro > div {
     text-align: center;
 }
 
+.intro a {
+    text-decoration: none;
+    color: #C2A5D1;
+}
+.intro a:hover{
+    text-decoration: underline;
+    color: #5D396F;
+}
+
 /* Results portion*/
 .hidden {
     display: none;
@@ -208,6 +217,7 @@ button:hover {
 .references ul {
     list-style-type: none;
     padding-left: 0;
+    font-size: smaller;
 }
 
 .references li {
