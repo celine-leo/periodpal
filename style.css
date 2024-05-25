@@ -22,8 +22,7 @@ body {
 }
 
 .pages {
-    margin-left: 40vh;
-    margin-right: 40vh;
+    margin: 0vh auto;
     max-width: 1080px;
     align-content: center;
 }
@@ -44,28 +43,27 @@ h1, h2, h4 {
 .fullContainer {
     display: flex;
     gap: 1vw;
-    width: 60vw;
+    width: auto;
     align-items: center;
-    margin: 1vw;
+    margin: 1vh auto;
     margin-left: 20%;
     margin-right: 20%;
-    max-width: 1500px;
-    justify-content: space-around;
+    max-width: 1200px;
+    justify-content: center;
 }
 
 /* Entire Calculator portion*/
 .container {
-    margin: auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 2vh auto;
     font-weight: normal;
     background-color: #ffffff;
-    padding: 4.5vw;
+    padding: 2vw;
     border-radius: 45px;
     box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
     width: auto;
     text-align: center;
     min-width: 17vw;
+    max-width: 30vw;
 }
 
 @media (max-width: 768px) {
@@ -75,8 +73,12 @@ h1, h2, h4 {
         display: grid;
         justify-content: center;
     }
+    .container {
+        max-width: 100%;
+        padding: 5vw;
+    }
     .pages {
-        margin: 5vh 3vw;
+        margin: 5vh 6vw;
     }
     .graph {
         margin: 5vh 3vw;
@@ -92,6 +94,7 @@ h1, h2, h4 {
     }
     #graphpage {
         overflow-x: auto;
+        width: auto;
     }
     div.cycleTypes {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
