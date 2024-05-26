@@ -17,14 +17,30 @@
     
     <script>
         function showLayer(layerId) {
-        const layers = document.querySelectorAll('.layer');
-        layers.forEach(layer => {
-            if (layer.id === layerId) {
-                layer.classList.remove('hidden');
-            } else {
-                layer.classList.add('hidden');
-            }
-        });}
+            const layers = document.querySelectorAll('.layer');
+            layers.forEach(layer => {
+                if (layer.id === layerId) {
+                    layer.classList.remove('hidden');
+                    layer.classList.add('visible');
+                } else {
+                    layer.classList.remove('visible');
+                    layer.classList.add('hidden');
+                }
+            });
+        }
+
+        function resetLayers() {
+            const layers = document.querySelectorAll('.layer');
+            layers.forEach(layer => {
+                if (layer.id === 'reset'|| layer.classList.contains('change')) {
+                    layer.classList.remove('hidden');
+                    layer.classList.add('visible');
+                } else {
+                    layer.classList.remove('visible');
+                    layer.classList.add('hidden');
+                }
+            });
+        }
     </script>
     
     <style>
@@ -108,6 +124,9 @@
             display: none;
         }
         
+        .visible {
+            display: block;
+        }
     </style>
 
 </head>
@@ -132,7 +151,7 @@
         
         <div class="cycle cycleContainer">
     
-            <div id="reset" class="layer">
+            <div id="reset" class="layer visible">
                 <img src="/assets/graph_full.png">
             </div>
     
@@ -195,20 +214,69 @@
         </div>
     
         <div class="button-container" id="reset">
-            <button onclick="showLayer('reset')" style="height: 7vh; color: black;">Reset</button>
+            <button onclick="resetLayers()" style="height: 7vh; color: black;">Reset</button>
         </div>
     </div>
      
     <div class="pages text">
-        <p>
-            The menstrual cycle involves four distinct phases:
-        </p>
-        <ul>
-            <li>Period (menstruation, also part of follicular phase)</li>
-            <li>Follicular (pre-egg release)</li>
-            <li>Ovulation (release of the egg)</li>
-            <li>Luteal (post-egg release)</li>
-        </ul>
+        <div>
+            <h2>Hormonal Changes</h2>
+            <p><i>Click "Reset" to show all.</i></p><ol>
+                <li id="Period" class="layer visible change">1. <b>Period</b>: Beginning with day one of menstruation, hormone levels are at their lowest, marking the shedding of the uterine lining.</li>
+                <li id="Proliferative" class="layer visible change">2. <b>Proliferative phase</b>: Follicle stimulating hormone (FSH) rises, stimulating follicle development and increasing oestrogen, which thickens the uterine lining.</li>
+                <li id="Ovulation" class="layer visible change">3. <b>Ovulation</b>: A surge in Luteinizing Hormone (LH) triggers the release of an egg from the ovary, with oestrogen peaking just before ovulation.</li>
+                <li id="Secretory" class="layer visible change">4. <b>Secretory phase</b>: Post-ovulation, progesterone dominates to maintain the uterine lining, preparing for potential pregnancy.</li>
+            </ol>
+            
+        </div>
+
+        <br/>
+
+        <div>
+            <h2>Overview</h2>
+            <p>
+                The ovarian cycle and uterine cycle are two interconnected processes that occur during the menstrual cycle. This delicate system prepares the body for potential pregnancy.
+            </p>
+        
+            <div>
+                <h3>Ovarian cycle</h3>
+                <p>
+                    The ovarian cycle is based on the changes in the ovaries and is mainly used determine the most fertile days to increase the chances of conceiving. The three phases are identified by the release of the egg, which are:
+                </p>
+                <ul>
+                    <li>Follicular (pre-egg release)</li>
+                    <li>Ovulation (release of the egg)</li>
+                    <li>Luteal (post-egg release)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Uterine Cycle</h3>
+                <p>
+                    The uterine cycle describes the changes in the endrometrial lining of the uterus for potential implantation of a fertilized egg. It is divided into four phases:
+                </p>
+                <ul>
+                    <li>Menstruation phase (Period)</li>
+                    <li>Proliferative phase</li>
+                    <li>Ovulation</li>
+                    <li>Secretory phase</li>
+                </ul>
+            </div>
+        </div>
+
+        <br/>
+
+        <div>
+            <h2>Inner Seasons</h2>
+            <p>The concept of "inner seasons" of the menstrual cycle is a metaphorical way to understand and relate to the different phases of the menstrual cycle, each associated with a season of the year. This framework helps in recognizing the cyclical nature of energy, emotions, and physical sensations throughout the menstrual cycle. Here is a summary of the inner seasons:</p>
+            <ol>
+                <li><b>Inner Winter (Menstrual Phase)</b>: Rest and recharge.</li>
+                <li><b>Inner Spring (Follicular Phase)</b>: Renew and grow.</li>
+                <li><b>Inner Summer (Ovulatory Phase)</b>: Peak energy and connect.</li>
+                <li><b>Inner Autumn (Luteal Phase)</b>: Slow down and prepare.</li>
+            </ol>
+            <p>Understanding these inner seasons can help you align your activities and self-care practices with the natural rhythms of their menstrual cycle, fostering a deeper connection with your body and overall well-being.</p>
+            <p>Learn more about what to focus on in terms of your nutrition, exercise and work during each phase of your cycle on the <a href="/views/pages/biohacking.html">biohacking</a> page.</p>
+        </div>
     </div>
 
     <script src="https://cdn.jotfor.ms/s/umd/latest/for-cardform-feedback-embed.js"></script> <script> var componentID = new JF_FeedbackEmbedButton({ buttonIcon: "rate", buttonFontColor: "#FFFFFF", buttonBackgroundColor: "#c2a5d1", formId: 241423256320445 , buttonText: "Leave your Feedback", buttonSide: "Bottom", buttonAlign: "Right", base: "https://form.jotform.com/", }).componentID; </script> <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script> <script>window.jotformEmbedHandler("iframe[id='" + componentID + "_iframe']", "https://form.jotform.com/")</script>
