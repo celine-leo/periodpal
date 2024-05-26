@@ -15,24 +15,7 @@
         gtag('config', 'G-TMV7P8QFCJ');
         </script>
         <style>
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-            th, td {
-                border: 1px solid black;
-                padding: 10px;
-                text-align: center;
-            }
-            th {
-                background-color: #E8B2B2;
-            }
-            .highlight {
-                background-color: #e8b2b262;
-            }
-            .info {
-                text-align: center;
-            }
+            
         </style>
         
     </head>
@@ -42,178 +25,187 @@
 
         <div class="pages text">
             <h1>Biohacking</h1>
-                <div class="scroll">
-                    <button class="scroll" onclick="scrollToSection('Nutrition')">Nutrition</button>
-                    <button class="scroll" onclick="scrollToSection('Exercise')">Exercise</button>
-                    <button class="scroll" onclick="scrollToSection('Work')">Work</button>
+
+            <div class="scroll">
+                <button class="scroll" onclick="scrollToSection('Nutrition')">Nutrition</button>
+                <button class="scroll" onclick="scrollToSection('Exercise')">Exercise</button>
+                <button class="scroll" onclick="scrollToSection('Work')">Work</button>
+            
+            </div>
+        </div>
+
+        <div class="pages text biohacking" id="Nutrition" style="margin-bottom: 5px;">
+                <h2>Nutrition</h2>
                 
-                </div>
+                <p>Sync your diet to your cycle. Check out the breakdown of nutritional recommendations for each phase of the menstrual cycle:</p>
+            </div>
+        </div>
+        <div class="biohackingTable">
+            <table>
+            <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Recommendation</th>
+                    <th>Examples</th>
+                    <th>Nutrient Highlights</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Period</td>
+                    <td>Iron-rich foods: To replenish iron lost during menstruation.</td>
+                    <td>Red meat, spinach, lentils, and fortified cereals</td>
+                    <td>Iron</td>
+                </tr>
+                <tr>
+                    <td>Anti-inflammatory foods: To reduce menstrual cramps.</td>
+                    <td>Berries, fatty fish (like salmon), and nuts</td>
+                    <td>Vitamin C (helps with iron absorption)</td>
+                </tr>
+                <tr>
+                    <td>Hydrating foods: To combat bloating and dehydration.</td>
+                    <td>Cucumber, leafy greens, and soups</td>
+                    <td>Magnesium (for muscle relaxation)</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Follicular</td>
+                    <td>Lean proteins: To support muscle repair and growth.</td>
+                    <td>Chicken, turkey, beans, and legumes</td>
+                    <td>Protein</td>
+                </tr>
+                <tr>
+                    <td>Complex carbohydrates: To provide sustained energy.</td>
+                    <td>Whole grains, sweet potatoes, and quinoa</td>
+                    <td>Omega-3 fatty acids</td>
+                </tr>
+                <tr>
+                    <td>Healthy fats: To support hormone production.</td>
+                    <td>Avocados, olive oil, and nuts</td>
+                    <td>Fibre</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Ovulation</td>
+                    <td>Antioxidant-rich foods: To reduce inflammation and support cellular health.</td>
+                    <td>Berries, citrus fruits, and dark leafy greens</td>
+                    <td>Antioxidants</td>
+                </tr>
+                <tr>
+                    <td>Vitamin-B rich foods: To support energy levels and hormone regulation</td>
+                    <td>Eggs, leafy greens, and whole grain</td>
+                    <td>Vitamin Bs</td>
+                </tr>
+                <tr>
+                    <td>Hydrating foods: To maintain optimal hydration and reduce bloating.</td>
+                    <td>Cucumbers, celery, soups</td>
+                    <td>Vitamin E</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Luteal</td>
+                    <td>Magnesium-rich foods: To reduce PMS symptoms such as bloating, irritability, and muscle cramps.</td>
+                    <td>Dark chocolate, nuts, and leafy greens</td>
+                    <td>Magnesium</td>
+                </tr>
+                <tr>
+                    <td>Complex carbohydrates: To stabilise mood and energy levels.</td>
+                    <td>Oats, brown rice, and sweet potatoes</td>
+                    <td>Calcium</td>
+                </tr>
+                <tr>
+                    <td>Calcium-rich foods: To reduce PMS symptoms.</td>
+                    <td>Yogurt, cheese, and leafy greens.</td>
+                    <td>Fibre</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="pages text biohacking" style="margin-top: 5px;"> 
+        <p class="references" style="text-align: right;"><i>
+            <a href="https://health.clevelandclinic.org/nutrition-and-exercise-throughout-your-menstrual-cycle">(Cleveland Clinic, 2023)</a><br/>
+            <a href="https://femalehealthawareness.org/en/nutritional-considerations-for-a-healthy-menstrual-cycle/">(Spetz, 2019)</a>
+        </i></p>
+        </div>
 
-            <section>
-                <div id="Nutrition" class="biohacking">
-                    <h2>Nutrition</h2>
-                    
-                    <p>Sync your diet to your cycle. Check out the breakdown of nutritional recommendations for each phase of the menstrual cycle:</p>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Phase</th>
-                                <th>Recommendation</th>
-                                <th>Examples</th>
-                                <th>Nutrient Highlights</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="3">Period</td>
-                                <td>Iron-rich foods: To replenish iron lost during menstruation.</td>
-                                <td>Red meat, spinach, lentils, and fortified cereals</td>
-                                <td>Iron</td>
-                            </tr>
-                            <tr>
-                                <td>Anti-inflammatory foods: To reduce menstrual cramps.</td>
-                                <td>Berries, fatty fish (like salmon), and nuts</td>
-                                <td>Vitamin C (helps with iron absorption)</td>
-                            </tr>
-                            <tr>
-                                <td>Hydrating foods: To combat bloating and dehydration.</td>
-                                <td>Cucumber, leafy greens, and soups</td>
-                                <td>Magnesium (for muscle relaxation)</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3">Follicular</td>
-                                <td>Lean proteins: To support muscle repair and growth.</td>
-                                <td>Chicken, turkey, beans, and legumes</td>
-                                <td>Protein</td>
-                            </tr>
-                            <tr>
-                                <td>Complex carbohydrates: To provide sustained energy.</td>
-                                <td>Whole grains, sweet potatoes, and quinoa</td>
-                                <td>Omega-3 fatty acids</td>
-                            </tr>
-                            <tr>
-                                <td>Healthy fats: To support hormone production.</td>
-                                <td>Avocados, olive oil, and nuts</td>
-                                <td>Fibre</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3">Ovulation</td>
-                                <td>Antioxidant-rich foods: To reduce inflammation and support cellular health.</td>
-                                <td>Berries, citrus fruits, and dark leafy greens</td>
-                                <td>Antioxidants</td>
-                            </tr>
-                            <tr>
-                                <td>Vitamin-B rich foods: To support energy levels and hormone regulation</td>
-                                <td>Eggs, leafy greens, and whole grain</td>
-                                <td>Vitamin Bs</td>
-                            </tr>
-                            <tr>
-                                <td>Hydrating foods: To maintain optimal hydration and reduce bloating.</td>
-                                <td>Cucumbers, celery, soups</td>
-                                <td>Vitamin E</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3">Luteal</td>
-                                <td>Magnesium-rich foods: To reduce PMS symptoms such as bloating, irritability, and muscle cramps.</td>
-                                <td>Dark chocolate, nuts, and leafy greens</td>
-                                <td>Magnesium</td>
-                            </tr>
-                            <tr>
-                                <td>Complex carbohydrates: To stabilise mood and energy levels.</td>
-                                <td>Oats, brown rice, and sweet potatoes</td>
-                                <td>Calcium</td>
-                            </tr>
-                            <tr>
-                                <td>Calcium-rich foods: To reduce PMS symptoms.</td>
-                                <td>Yogurt, cheese, and leafy greens.</td>
-                                <td>Fibre</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class="references" style="text-align: right;"><i>
-                        <a href="https://health.clevelandclinic.org/nutrition-and-exercise-throughout-your-menstrual-cycle">(Cleveland Clinic, 2023)</a><br/>
-                        <a href="https://femalehealthawareness.org/en/nutritional-considerations-for-a-healthy-menstrual-cycle/">(Spetz, 2019)</a>
-                    </i></p>
-                </div>
 
-            </section>
+        <div class="pages text biohacking" id="Exercise" style="margin-bottom: 5px;">
+                <h2>Exercise</h2>
+                <p>
+                    According to a study (Carmichael, Thomson, Moran, & Wycherley, 2021), there may be certain exercises which reported better performance during specific phases of the cycle. Find out which exercise to focus on according to your phase below:
+                </p>
+            </div>
+        </div>
+        <div class="biohackingTable">
+            <table>
+                    <tr>
+                        <th></th>
+                        <th>Period</th>
+                        <th>Follicular</th>
+                        <th>Ovulation</th>
+                        <th>Luteal</th>
+                    </tr>
+                    <tr>
+                        <td><i>Endurance</i></td>
+                        <td>+</td>
+                        <td class="highlight">++</td>
+                        <td>-</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><i>Aerobic</i></td>
+                        <td class="highlight">++</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td><i>Anaerobic</i></td>
+                        <td>-</td>
+                        <td>--</td>
+                        <td class="highlight">++</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td></i>Strength</i></td>
+                        <td>-</td>
+                        <td>+</td>
+                        <td class="highlight">++</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>FEELING</td>
+                        <td class="info">Lethargic due to low hormone levels</td>
+                        <td class="info">Regain energy when oestrogen and progesterone start to increase</td>
+                        <td class="info">Extra energy<br><br>However, some might experience abdominal pain during ovulation, so don't hesitate to take it easy when needed.</td>
+                        <td class="info">PMS symptoms, like breast pain or cramps, can make certain types of exercise uncomfortable.<br><br>You may engage in high intensity workouts but do factor in extra time for recovery.</td>
+                    </tr>
+                    <tr>
+                        <td>INTENSITY</td>
+                        <td>LOW</td>
+                        <td>HIGH</td>
+                        <td>MODERATE</td>
+                        <td>LOW</td>
+                    </tr>
+                    <tr>
+                        <td>EXERCISE</td>
+                        <td class="info">Low impact movements<br><br>E.g. yoga, stretching, low intensity walks.</td>
+                        <td class="info">Endurance or resistance training<br><br>E.g. hike, brisk walk, weight training</td>
+                        <td class="info">Intense exercise<br><br>E.g. HIIT, spin</td>
+                        <td class="info">Low intensity exercises<br><br>E.g. stroll or restorative yoga</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="pages text biohacking" style="margin-top: 5px;"> 
+            <p class="references" style="text-align: right;"><i><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7916245/">(Carmichael, Thomson, Moran, & Wycherley, 2021)</a></i></p>
+        </div>
 
-            <section>
-                <div id="Exercise" class="biohacking">
-                    <h2>Exercise</h2>
-                    <p>
-                        According to a study (Carmichael, Thomson, Moran, & Wycherley, 2021), there may be certain exercises which reported better performance during specific phases of the cycle. Find out which exercise to focus on according to your phase below:
-                    </p>
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th>Period</th>
-                            <th>Follicular</th>
-                            <th>Ovulation</th>
-                            <th>Luteal</th>
-                        </tr>
-                        <tr>
-                            <td><i>Endurance</i></td>
-                            <td>+</td>
-                            <td class="highlight">++</td>
-                            <td>-</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td><i>Aerobic</i></td>
-                            <td class="highlight">++</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <td><i>Anaerobic</i></td>
-                            <td>-</td>
-                            <td>--</td>
-                            <td class="highlight">++</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td></i>Strength</i></td>
-                            <td>-</td>
-                            <td>+</td>
-                            <td class="highlight">++</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <td>FEELING</td>
-                            <td class="info">Lethargic due to low hormone levels</td>
-                            <td class="info">Regain energy when oestrogen and progesterone start to increase</td>
-                            <td class="info">Extra energy<br><br>However, some might experience abdominal pain during ovulation, so don't hesitate to take it easy when needed.</td>
-                            <td class="info">PMS symptoms, like breast pain or cramps, can make certain types of exercise uncomfortable.<br><br>You may engage in high intensity workouts but do factor in extra time for recovery.</td>
-                        </tr>
-                        <tr>
-                            <td>INTENSITY</td>
-                            <td>LOW</td>
-                            <td>HIGH</td>
-                            <td>MODERATE</td>
-                            <td>LOW</td>
-                        </tr>
-                        <tr>
-                            <td>EXERCISE</td>
-                            <td class="info">Low impact movements<br><br>E.g. yoga, stretching, low intensity walks.</td>
-                            <td class="info">Endurance or resistance training<br><br>E.g. hike, brisk walk, weight training</td>
-                            <td class="info">Intense exercise<br><br>E.g. HIIT, spin</td>
-                            <td class="info">Low intensity exercises<br><br>E.g. stroll or restorative yoga</td>
-                        </tr>
-                    </table>
-                    <p class="references" style="text-align: right;"><i><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7916245/">(Carmichael, Thomson, Moran, & Wycherley, 2021)</a></i></p>
-                </div>
-            </section>
-
-            <section>
-                <div id="Work" class="biohacking">
-                    <h2>Work</h2>
-                    
-                    <p>Try cycle syncing by aligning your work tasks with your menstrual cycle to optimize your performance, well-being and productivity. By understanding your hormonal fluctuations throughout the month, you can schedule demanding tasks during high-energy phases and prioritize self-care during low-energy periods. This approach can lead to increased efficiency, reduced stress, and improved overall work satisfaction.
-                    </p>
-                    <table>
+        <div class="pages text biohacking" id="Work" style="margin-bottom: 5px;">
+            <h2>Work</h2>
+            
+            <p>Try cycle syncing by aligning your work tasks with your menstrual cycle to optimize your performance, well-being and productivity. By understanding your hormonal fluctuations throughout the month, you can schedule demanding tasks during high-energy phases and prioritize self-care during low-energy periods. This approach can lead to increased efficiency, reduced stress, and improved overall work satisfaction.
+            </p>
+        </div>
+        <div class="biohackingTable">
+            <table>
                         <tr>
                           <th></th>
                           <th>Period</th>
@@ -242,12 +234,14 @@
                           <td>Summer</td>
                           <td>Fall</td>
                         </tr>
-                      </table>
-                    <p class="references" style="text-align: right;"><i>
-                        <a href="https://www.wellset.co/blog/productivity-menstrual-cycle ">(Bruflodt , 2022)</a><br/>
-                        <a href="https://www.forbes.com/sites/alexandramysoor/2018/05/10/how-women-can-use-monthly-periods-as-a-productivity-tool/?sh=5c7d65bd1637">(Mysoor, 2024)</a>
-                    </i></p>
-                </div>
+            </table>
+        </div>
+        <div class="pages text biohacking" style="margin-top: 5px;">
+            <p class="references" style="text-align: right;"><i>
+                <a href="https://www.wellset.co/blog/productivity-menstrual-cycle ">(Bruflodt , 2022)</a><br/>
+                <a href="https://www.forbes.com/sites/alexandramysoor/2018/05/10/how-women-can-use-monthly-periods-as-a-productivity-tool/?sh=5c7d65bd1637">(Mysoor, 2024)</a>
+            </i></p>
+        </div>
                 
             </section>
         </div>    

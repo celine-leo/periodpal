@@ -106,6 +106,18 @@ h1, h2, h4 {
         flex-direction: column;
         align-items: flex-start;
     }
+    div.pages.text > section > div > div.topics {
+        width:auto
+    }
+    div.biohackingTable {
+        box-sizing: content-box;
+        overflow-x: scroll;
+        width: auto;
+        border-width: 0vh 0vh;
+        margin: 0 2vw;
+        max-width: 1080px;
+    }
+    
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -134,10 +146,12 @@ div.pages.intro > div {
     box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .intro p,
 .cycleText p {
     text-align: justify;
 }
+
 .intro a {
     text-decoration: none;
     color: #C2A5D1;
@@ -221,7 +235,29 @@ button:hover {
 .recommendation span {
     font-weight: bold;
 }
-
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0vh auto;
+    max-width: 1080px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #E8B2B2;
+}
+.highlight {
+    background-color: #e8b2b262;
+}
+.info {
+    text-align: center;
+}
+.biohacking p {
+    text-align: justify;
+}
 /* References */
 .references ul {
     list-style-type: none;
@@ -259,7 +295,7 @@ button.scroll  {
 .topics {
     background-color: #ffffff;
     padding: 2vw;
-    border-radius: 45px;
+    border-radius: 15px;
     box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
     width: 30%;
 }
