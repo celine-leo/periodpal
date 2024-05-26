@@ -36,7 +36,6 @@ h1, h2, h4 {
     font-optical-sizing: auto;
     font-weight:bold;
     font-style: normal;
-    font-variation-settings:"width" 100;
     margin-bottom: 15px;
 }
 
@@ -331,9 +330,17 @@ section {
     font-weight: bold;
 }
 .thanks {
-    padding: 80px 80px;
     text-align: center; 
-    vertical-align: middle
+    vertical-align: middle;
+    display:flex;
+    flex-direction: column;
+}
+.thanks p {
+    margin: 0.5vh 0;
+}
+.thanks img {
+    width: 20vw; 
+    margin: 0 auto;
 }
 
 /* Hide the default scrollbar */
