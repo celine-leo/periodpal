@@ -127,6 +127,18 @@
         .visible {
             display: block;
         }
+        
+        button:active {
+            box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+            background-color: gainsboro;
+            transform: scale(0.95)
+        }
+        button:hover {
+            background-color: gainsboro;
+        }
+        button {
+            cursor: pointer;
+        }
     </style>
 
 </head>
@@ -218,15 +230,17 @@
         </div>
     </div>
      
-    <div class="pages text">
+    <div class="pages text cycleText">
         <div>
             <h2>Hormonal Changes</h2>
-            <p><i>Click "Reset" to show all.</i></p><ol>
+            <p><i>Click on the 4 phases to show specific changes or "Reset" to show all.</i></p>
+            <ol>
                 <li id="Period" class="layer visible change">1. <b>Period</b>: Beginning with day one of menstruation, hormone levels are at their lowest, marking the shedding of the uterine lining.</li>
                 <li id="Proliferative" class="layer visible change">2. <b>Proliferative phase</b>: Follicle stimulating hormone (FSH) rises, stimulating follicle development and increasing oestrogen, which thickens the uterine lining.</li>
                 <li id="Ovulation" class="layer visible change">3. <b>Ovulation</b>: A surge in Luteinizing Hormone (LH) triggers the release of an egg from the ovary, with oestrogen peaking just before ovulation.</li>
                 <li id="Secretory" class="layer visible change">4. <b>Secretory phase</b>: Post-ovulation, progesterone dominates to maintain the uterine lining, preparing for potential pregnancy.</li>
             </ol>
+            <p>Hormones are chemical messengers produced by various glands in the endocrine system that regulate numerous functions in the body. They travel through the bloodstream to tissues and organs, where they influence processes such as growth, metabolism, reproduction, mood, and overall homeostasis. Out of over 50 hormones in our body, there are four hormones that are key during the menstrual cycle. Some other more known hormones are cortisol, thyroid and insulin.</p>
             
         </div>
 
